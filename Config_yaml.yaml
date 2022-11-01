@@ -12,7 +12,7 @@ Load_List:
     info: 'Actuator Env|RCE:spring.cloud.bootstrap.location|XStreamRCE:eureka.client.serviceUrl.defaultZone
     Find!!!'}
   - {method: GET, state: '200', name: Druid Monitor, url: /druid/index.html, id: 4,
-     info: Druid Monitor Find!!!, loaded: true, type: Unauthorized, re: druid}
+     info: Druid Monitor Find!!!, loaded: true, type: Unauthorized, re: 'Druid Stat Index'}
   - {type: ApiDoc, loaded: true, re: api-docs, method: GET, name: api-docs, id: 5, state: '200',
      url: /v2/api-docs, info: api-docs Find!!!}
   - {type: ApiDoc, loaded: true, re: Swagger UI, method: GET, name: Swagger-UI, id: 6,
@@ -27,7 +27,7 @@ Load_List:
      id: 12, state: '200', url: /swagger-resources, info: swagger-resources Find!!!}
   - {type: ApiDoc, loaded: true, re: ASP.NET|tempuri.org, method: GET, name: Soap, id: 13,
      state: '200', url: /services, info: Soap Find!!!}
-  - {type: Information leakage, loaded: true, re: .git, method: GET, name: .Git, id: 17,
+  - {type: Information leakage, loaded: true, re: 'refs/heads', method: GET, name: .Git, id: 17,
      state: '200', url: /.git/HEAD, info: .git Find!!!}
   - {type: Information leakage, loaded: true, re: -props|svn://, method: GET, name: Svn,
      id: 18, state: '200', url: /.svn/entries, info: .svn Find!!!}
